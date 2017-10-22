@@ -29,7 +29,7 @@ int main()
 
 	for (i = 0; i < counter; i++) 
 	{
-		fp = fopen("Primes.txt", "a"); //create file Primes.txt for output
+		fp = fopen("Primes.txt", "a"); //create file Primes.txt for output, mode "w" for writing to file
 		printf("%d\n", primes[i]); //write output to user
 		fprintf(fp, "%d\n", primes[i]); //print output to file
 		fclose(fp); //close file
